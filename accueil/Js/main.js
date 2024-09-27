@@ -1,50 +1,35 @@
-const menu = document.querySelectorAll('.menu');
+const nav = document.querySelectorAll('.nav ul li');
 const title = document.querySelector('.title');
-const btn = document.querySelector('.label');
-const toggleBtn = document.getElementById("ch");
-const html = document.querySelector("html");
-const ball = document.querySelector(".ball");
-const header = document.querySelector("header");
-const footer = document.querySelector('footer');
-const navtel = document.querySelector('.onglets_tel');
-const navlink = document.querySelector('.nav');
+const form_contact = document.querySelector('.section_contact');
+const parallax = document.getElementById('parallax');
 
 window.addEventListener('load', () => {
 
     const TL = gsap.timeline({ paused: true });
 
     TL
-        .staggerFrom(menu, 1, { left: -50, opacity: -5, ease: "power2.out" }, 0.2)
-        .from(title, 1, { transform: "scale(0)", ease: "power2.out" }, 0.2)
-        .from(btn, 1, { transform: "scale(0)", ease: "power2.out" }, 0.2)
+        .staggerFrom(title, 1, { left: -50, opacity: -5 }, 0.2)
+        .from(nav, 1, { x: 1000 }, 0.2)
+        .from(parallax, 1, { y: -100 }, 0.2)
+        .from(form_contact, 1, { x:1000, opacity: -2 } ,0.5)
 
     TL.play();
 });
 
+const header = document.querySelector("header");
+
 window.addEventListener("scroll", () => {
 
-    if (window.scrollY > 60) {
-        header.classList.add('anim-header')
+    if (window.scrollY > 0) {
+        header.classList.add('colle')
     } else {
-        header.classList.remove('anim-header')
-    }
-
-    if (window.scrollY > 860) {
-        header.classList.add('anim-header-b')
-    } else {
-        header.classList.remove('anim-header-b')
+        header.classList.remove('colle')
     }
 });
 
-toggleBtn.addEventListener("change", () => {
+const navtel = document.querySelector('.onglets_tel');
+const navlink = document.querySelector('.nav');
 
-    document.body.classList.toggle("dark-mode");
-    html.classList.toggle("dark-mode");
-    header.classList.toggle("dark-mode");
-    ball.classList.toggle("dark-mode");
-    footer.classList.toggle("dark-mode");
-
-});
 let menuOpen = false;
 navtel.addEventListener('click', () => {
     if (!menuOpen) {

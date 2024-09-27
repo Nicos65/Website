@@ -3,12 +3,11 @@
 1. [Info général](#Info-général)
 2. [Technologies](#technologies)
 3. [Auteur](#Auteur)
-4. [FAQs](#faqs)
 ### Info général
 ***
-Ceci est projet commencé en première année de licence informatique, je voulais faire un site sur un sujet que j'aime donc l'espace.
+Ceci est projet commencé en première année de licence informatique et repris 2 ans plus tard, je voulais faire un site sur un sujet que j'aime donc l'espace et plus particulièrement le système solaire.
 
-Ce site est constitué d'une page d'accueil pre-site (décoration) pour ensuite arriver sur une autre page d'accueil contenant 4 grandes sections qui sont:
+Ce site vitrine informatif est constitué d'une page d'accueil contenant 4 grandes sections qui sont:
 
 - planètes
 - Satellites
@@ -16,7 +15,6 @@ Ce site est constitué d'une page d'accueil pre-site (décoration) pour ensuite 
 - Contact
 
 Les 3 premières sections renvoient sur une page de catalogue qui affiche chaque élément de la section (ex: Pour les planètes cela donnera comme sur la 5e capture d'écran).
-Bien sur 
 ![Arboressance du site](ressources/screen/screen.PNG)
 ### Captures d'écran
 ![Page Index(première page)](ressources/screen/screen1.PNG)
@@ -37,20 +35,4 @@ Voici la liste des technologies utilisés dans le projet :
 ## Auteur
 ***
 Dubroca nicolas [@Nicos65](https://github.com/Nicos65)
-## FAQs
-***
-A list of frequently asked questions
-1. **This is a question in bold**
-Answer to the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question, we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer to the third question with *italic words*.
-4. **Fourth question in bold**
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
  

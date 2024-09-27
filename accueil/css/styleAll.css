@@ -1,0 +1,1062 @@
+/* START PAGE CODE */
+*,
+::before,
+::after {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    background-color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: 'Abril fatface', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.home {
+    padding-top: 100px;
+}
+
+/* SECTION BODY */
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+#start section {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+#start section .btn-section {
+    padding-bottom: 450px;
+}
+
+#start section .section-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.s0 {
+    background: url('../ressources/background/news.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.s1 {
+    background: url('../ressources/background/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.s2 {
+    background: url('../ressources/background/satellites.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.s3 {
+    background: url('../ressources/background/asteroide.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.s4 {
+    background: url('../ressources/background/contact.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-first {
+    border: 2px solid #fff;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Black Ops One', cursive;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-first::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 77px;
+    top: 0;
+    left: 0;
+    background-color: #2c5364;
+    z-index: -1;
+    transition: .4s ease-in-out;
+}
+
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-first:hover:before {
+    width: 296px;
+}
+
+.content a {
+    border: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    font-size: 10px;
+    padding: 10px;
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Black Ops One', cursive;
+}
+
+.content a:hover {
+    transition: all 0.3s ease-in-out;
+    background: #BDBDBD;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* SETUP START PAGE (INDEX) */
+video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+}
+
+/* CHANGE SCROLLBAR DECORATION */
+::-webkit-scrollbar {
+    width: 5px;
+    background: #000;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+    height: 300px;
+    border-radius: 50px;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    padding: 40px 100px;
+    z-index: 15;
+    background: rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(10px);
+}
+
+/* STICKY HEADER JS (anim) */
+.colle {
+    padding: 10px 50px;
+    background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+}
+
+.title {
+    position: relative;
+    text-transform: uppercase;
+    font-size: larger;
+    letter-spacing: 5px;
+    font-family: 'Black Ops One', cursive;
+    color: #FFF;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+.nav ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #FFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav ul li a:hover {
+    color: #6ed3ffd2;
+}
+
+.nav ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -3px;
+    transition: .3s ease-in-out;
+}
+
+.nav ul li a:hover:after {
+    width: 100%;
+}
+
+.active {
+    border-bottom: 3px solid #FFF;
+    color: #FFF;
+}
+
+/* NAV TELEPHONE */
+.onglets_tel {
+    height: 25px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+
+}
+
+.line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+}
+
+/* GENERAL PLANETES/SATELLITES/ASTEROIDES */
+.affiche {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.informations {
+    display: block;
+    color: #FFF;
+    
+}
+
+.cool{
+    width: 300px;
+    height: 300px;
+}
+
+.informations div ul {
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+.desc {
+    overflow-y: scroll;
+    color: #FFF;
+}
+
+.desc h1 {
+    text-align: center;
+}
+
+.desc p {
+    padding: 20px;
+    margin-left: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* PAGE NEWS */
+.news{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    color:#FFF;
+    background-color: #2c5364;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+}
+.div_img_news{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+.news div img{
+    width: 500px;
+}
+.date_news{
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* PAGE MENTION/POLITIQUE */
+.mention {
+    color: #fff;
+    margin: 15%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    height: auto;
+    width: auto;
+}
+
+.mention h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.mention p {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mention p b {
+    font-family: 'Black Ops One', cursive;
+}
+
+/* PAGE CONTACT */
+.body-contact {
+    height: auto;
+    background: url("../ressources/background/ciell.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section_contact {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 100px 0px;
+    height: auto;
+}
+
+.section_contact form {
+    margin-right: 30px;
+}
+
+/* FORMULAIRE DE CONTACT */
+.section_contact form {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.section_contact form h1 {
+    color: #fff;
+    font-weight: 20px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.section_contact form input {
+    width: 70%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.section_contact form input:hover {
+    background-color: #000;
+}
+
+.section_contact form select {
+    width: 70%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.section_contact form select:hover {
+    background-color: #000;
+}
+
+.section_contact form textarea {
+    background: none;
+    border: none;
+    width: 90%;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #fff;
+}
+
+.section_contact form #button {
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    width: 100px;
+    padding: 0;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+/* CARTES INFO CONTACT */
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.contact-info div {
+    background: rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(10px);
+    margin: 10px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    cursor: pointer;
+}
+
+.carte-icon {
+    font-size: 25px;
+    margin: 2%;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    line-height: 60px;
+    transition: 0.3s linear;
+}
+
+.contact-info div:hover .carte-icon {
+    background: none;
+    transform: scale(1.6);
+}
+
+.contact-info div p {
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+    text-align: center;
+    color: #FFF;
+}
+
+.contact-info div:hover p {
+    max-height: 40px;
+    opacity: 1;
+}
+
+/* PAGE SUCCES */
+.section_succes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    text-align: center
+}
+
+.link_succes {
+    padding-top: 50px;
+}
+
+.link_succes a {
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.link_succes a:hover {
+    font-size: 1.1rem;
+}
+
+.link_succes a::after {
+    content: "";
+    position: absolute;
+    background-color: #FFF;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -3px;
+    transition: .3s ease-in-out;
+}
+
+.link_succes a:hover::after {
+    width: 100%;
+}
+
+.p_succes {
+    padding-top: 10px;
+}
+
+/* PAGE PLANETES/SATELLITES/ASTEROIDES */
+#parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#parallax::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #000, transparent);
+    z-index: 15;
+}
+
+#parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#titre {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 5vh;
+    margin-top: 200px;
+    z-index: 1;
+}
+
+#parallax p {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 450px;
+    width: 80%;
+    z-index: 1;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+}
+
+
+
+#explore {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 3vh;
+    height: 35px;
+    width: 200px;
+    margin-top: 350px;
+    z-index: 1;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Black Ops One', cursive;
+}
+
+#explore:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #2c5364;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.cards {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.Titre_cards {
+    display: block;
+}
+
+.cards h1 {
+    display: block;
+}
+
+.cards .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cards .circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.cards:hover .circle:before {
+    background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+    clip-path: circle(400px at center);
+}
+
+.cards img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.cards:hover img {
+    left: 80%;
+    transform: translate(-50%, -50%) scale(0.6);
+    height: 350px;
+}
+
+.cards .content {
+    position: relative;
+    width: 55%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cards .content h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 3px 2px #000;
+    margin: 3%;
+}
+
+.cards .content p {
+    margin: 5%;
+    color: #fff;
+    text-shadow: 3px 2px #000;
+    font-size: 16px;
+}
+
+.cards:hover .content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+#second {
+    height: auto;
+    width: 100%;
+}
+
+#second h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 40px 20px 20px 20px;
+    font-size: 3vh;
+    color: #fff;
+}
+
+.regroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.div-presentation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    margin-left: 2%;
+    margin-top: 20px;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+}
+
+.image-p {
+    color: #fff;
+    text-align: center;
+}
+
+.btn {
+    margin-left: 2%;
+    border-radius: 10px;
+}
+
+/* FOOTER SECTION */
+footer {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #FFF;
+    padding: 4%;
+}
+
+.hr-contact {
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services .service {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+
+.part_1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service h3 {
+    text-transform: uppercase;
+}
+
+.service nav {
+    float: left;
+}
+
+.service nav ul li {
+    list-style: none;
+    padding: 4px 10px;
+}
+
+.service nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.service nav ul li a:hover {
+    color: #9e9d9d;
+}
+
+.service input {
+    margin-top: 10px;
+}
+
+.service label {
+    color: white;
+}
+
+.service label a {
+    color: #FFF;
+}
+
+.service label a:hover {
+    color: #9e9d9d;
+}
+
+.inp-form {
+    height: 30px;
+    width: 300px;
+    display: block;
+    cursor: pointer;
+    border: 2px solid #000;
+    outline: none;
+}
+
+.inp-form:hover {
+    background: #9e9d9d;
+}
+
+label a {
+    color: #6f6f6f;
+}
+
+#reseaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+#reseaux a {
+    width: 100%;
+    margin: 10px;
+}
+
+#reseaux a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #FFF;
+}
+
+#reseaux div {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 15px;
+    border-bottom: 2px solid #FFF;
+}
+
+/* MEDIA WIDTH */
+/* WIDTH MIN*/
+@media all and (min-width:769px) {
+    .onglets_tel {
+        display: none;
+    }
+}
+
+/* WIDTH MAX */
+@media all and (max-width:1024px) {
+    .onglets_tel {
+        display: flex;
+        z-index: 100;
+    }
+
+    .nav {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.60);
+        margin-top: 100vh;
+        transition: 0.6s ease-in-out;
+    }
+
+    header ul {
+        display: block;
+    }
+
+    .nav ul li {
+        padding-top: 40px;
+    }
+
+    .nav ul li a {
+        font-size: 1.5em;
+    }
+
+    .menu-tel {
+        margin-top: 0px;
+    }
+}
+
+@media all and (max-width:991px) {
+    body {
+        height: auto;
+    }
+
+    .section_contact {
+        flex-direction: column;
+    }
+
+    .section_contact form {
+        width: 100%;
+    }
+
+    .cards {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+    }
+
+    .cards:hover {
+        height: 700px;
+    }
+
+    .cards .content {
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    .cards:hover img {
+        top: 70%;
+        left: 50%;
+        height: 290px;
+    }
+    .news{
+        display: block;
+    }
+    .div_img_news{
+        margin: auto;
+    }
+    .news div img{
+        width: 100%;
+    }
+}
+
+@media all and (max-width:900px) {
+.affiche {
+    display: block;
+    height: auto;
+}
+
+.informations {
+    display: block;
+    max-height: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cool{
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.informations div ul {
+    list-style-type: none;
+    margin-top: 50px;
+}
+.desc{
+    display: block;
+    max-height: 500px;
+}
+
+.desc p {
+    padding: 20px;
+    margin-left: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+}
+
+@media all and (max-width:570px) {
+    .form {
+        padding: 0px;
+    }
+}
+
+@media all and (max-width:425px) {
+
+    header {
+        padding: 40px 50px;
+    }
+
+    .form {
+        padding-left: 0;
+        font-size: 10px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    .mention {
+        margin: 2%;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 10px;
+    }
+
+    .btn-first {
+        font-size: 20px;
+        width: 200px;
+    }
+}
+
+@media all and (max-width:375px) {
+    header {
+        padding: 40px 10px;
+    }
+
+    .colle {
+        padding: 10px 10px;
+    }
+
+    .btn-first {
+        font-size: 20px;
+        width: 200px;
+    }
+    .cool{
+        height: 250px;
+    }
+    
+}
+
+/* MEDIA MAX HEIGHT */
+@media all and (max-height:601px) {
+
+    #start section div {
+        padding-bottom: 250px;
+    }
+}
